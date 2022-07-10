@@ -2,12 +2,12 @@
 
 ## Features
 
-* Header section (Left, right) - completed
-* Sidebar section - completed
-* Body section - completed
-* Theme colors - completed
-* Cards - completed
-* Tabset - completed
+- [x] Header section (Left, right) - completed
+- [x] Sidebar section - completed
+- [x] Body section - completed
+- [x] Theme colors - completed
+- [x] Cards - completed
+- [x] Tabset - completed
 * Modal Dialog
 * Form
 * Buttons
