@@ -1,4 +1,4 @@
-# nextGenShinyApps 1.4.5
+# nextGenShinyApps 1.4
 
 ## Features
 
