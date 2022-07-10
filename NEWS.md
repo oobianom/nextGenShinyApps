@@ -8,7 +8,7 @@
 - [x] Theme colors - completed
 - [x] Cards - completed
 - [x] Tabset - completed
-* Modal Dialog
+- [x] Modal Dialog
 * Form
 * Buttons
 * Badges **
