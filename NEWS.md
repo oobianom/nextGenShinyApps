@@ -2,13 +2,12 @@
 
 ## Features
 
-* Two new templates 
-* Header section (Left, right)
-* Sidebar section
-* Body section
-* Theme colors
-* Cards
-* Tabset
+* Header section (Left, right) - completed
+* Sidebar section - completed
+* Body section - completed
+* Theme colors - completed
+* Cards - completed
+* Tabset - completed
 * Modal Dialog
 * Form
 * Buttons
