@@ -9,8 +9,8 @@
 - [x] Cards - completed
 - [x] Tabset - completed
 - [x] Modal Dialog
-* Form
-* Buttons
+- [x] Form
+- [x] Buttons
 * Badges **
 * Accordion
 * Spinners
