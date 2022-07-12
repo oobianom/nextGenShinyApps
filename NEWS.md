@@ -11,7 +11,6 @@
 - [x] Modal Dialog
 - [x] Form
 - [x] Buttons
-* Badges **
+- [x] Alerts
 * Accordion
-* Spinners
-* Tooltip **
+- [x] Spinners
