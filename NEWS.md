@@ -12,5 +12,5 @@
 - [x] Form
 - [x] Buttons
 - [x] Alerts
-* Accordion
+- [x] Accordion
 - [x] Spinners
