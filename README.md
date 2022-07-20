@@ -1,5 +1,7 @@
 # nextGenShinyApps
 Tools for building the next generation of shiny applications
+[![](https://cranlogs.r-pkg.org/badges/nextGenShinyApps)](https://cran.r-project.org/package=nextGenShinyApps)
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/nextGenShinyApps)](https://cran.r-project.org/package=nextGenShinyApps)
 
 ## Timeline
 
@@ -8,7 +10,7 @@ Tools for building the next generation of shiny applications
  
 ## More information
 
-www.coursewhiz.org
+https://nextgenshinyapps.obi.obianom.com
 
 ## Author
 
