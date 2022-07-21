@@ -1,18 +1,16 @@
-# nextGenShinyApps 1.4.5
+# nextGenShinyApps 1.4
 
 ## Features
 
-* Two new templates 
-* Header section (Left, right)
-* Sidebar section
-* Body section
-* Theme colors
-* Cards
-* Tabset
-* Modal Dialog
-* Form
-* Buttons
-* Badges **
-* Accordion
-* Spinners
-* Tooltip **
+- [x] Header section (Left, right) - completed
+- [x] Sidebar section - completed
+- [x] Body section - completed
+- [x] Theme colors - completed
+- [x] Cards - completed
+- [x] Tabset - completed
+- [x] Modal Dialog
+- [x] Form
+- [x] Buttons
+- [x] Alerts
+- [x] Accordion
+- [x] Spinners

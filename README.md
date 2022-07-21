@@ -1,14 +1,27 @@
 # nextGenShinyApps
 Tools for building the next generation of shiny applications
 
-## Timeline
+## Use
+The nextGenShinyApps package is available on CRAN and can be installed as shown below
 
- - Start of project: 7/5/2022
- - Anticipated deployment: 7/29/2022
+`install.packages(nextGenShinyApps)`
+
+Attach library 
+
+`library(nextGenShinyApps)`
+
+## Demo output
+
+![](https://nextgenshinyapps.obi.obianom.com/nextgenshinyapps.png)
+
+## Tutorial
+
+Check CRAN link for vignettes
  
 ## More information
 
-www.coursewhiz.org
+ - https://nextgenshinyapps.obi.obianom.com
+ - https://coursewhiz.org/mainsite/nextgenshinyapps/
 
 ## Author
 
