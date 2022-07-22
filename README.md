@@ -32,9 +32,18 @@ The nextGenShinyApps package is available on CRAN and can be installed as shown 
 `load.example("Accordion")`
 
 
-## Sample Demo Output
+## Sample Demo Output 1
 
 ![](https://nextgenshinyapps.obi.obianom.com/nextgenshinyapps.png)
+
+## Sample Demo Output 2
+
+![](https://nextgenshinyapps.obi.obianom.com/nextgenshinyapps3.png)
+
+## Sample Demo Output 3
+
+![](https://nextgenshinyapps.obi.obianom.com/nextgenshinyapps1.png)
+
 
 ## Tutorial
 
