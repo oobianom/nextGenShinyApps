@@ -1,12 +1,10 @@
-# nextGenShinyApps
-Tools for building the next generation of shiny applications
+# nextGenShinyApps: Tools in R for building the next generation of Shiny applications and responsive aashboards
 
-[![](https://cranlogs.r-pkg.org/badges/nextGenShinyApps)](https://cran.r-project.org/package=nextGenShinyApps)
-
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/nextGenShinyApps)](https://cran.r-project.org/package=nextGenShinyApps)
+Version: [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/nextGenShinyApps)](https://cran.r-project.org/package=nextGenShinyApps)
 
 
-## Use
+
+## R Package installation and usage
 The nextGenShinyApps package is available on CRAN and can be installed as shown below
 
 `install.packages(nextGenShinyApps)`
@@ -47,6 +45,9 @@ Check R CRAN link for vignettes
  
  - https://nextgenshinyapps.obi.obianom.com
 
-## Author
+## Statistics 
 
-  - Obinna Obianom
+[![](https://cranlogs.r-pkg.org/badges/nextGenShinyApps)](https://cran.r-project.org/package=nextGenShinyApps)
+
+
+
