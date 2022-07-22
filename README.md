@@ -11,22 +11,41 @@ The nextGenShinyApps package is available on CRAN and can be installed as shown 
 
 `install.packages(nextGenShinyApps)`
 
-Attach library 
+### Attach library 
 
 `library(nextGenShinyApps)`
 
-## Demo output
+### Get started with some of the examples
+
+`load.example("Card")`
+
+`load.example("Plain")`
+
+`load.example("noSideBar")`
+
+`load.example("Tab")`
+
+`load.example("Modal")`
+
+`load.example("Alert")`
+
+`load.example("Accordion")`
+
+
+## Sample Demo Output
 
 ![](https://nextgenshinyapps.obi.obianom.com/nextgenshinyapps.png)
 
 ## Tutorial
 
-Check CRAN link for vignettes
+Check R CRAN link for vignettes
  
 ## More information
 
- - https://nextgenshinyapps.obi.obianom.com
+ 
  - https://coursewhiz.org/mainsite/nextgenshinyapps
+ 
+ - https://nextgenshinyapps.obi.obianom.com
 
 ## Author
 
