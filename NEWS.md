@@ -1,13 +1,19 @@
-# nextGenShinyApps 1.4
+# nextGenShinyApps 1.6
 
 ## Features
 
-- [x] Header section (Left, right) - completed
-- [x] Sidebar section - completed
-- [x] Body section - completed
-- [x] Theme colors - completed
-- [x] Cards - completed
-- [x] Tabset - completed
+Work in progress
+
+# nextGenShinyApps 1.5
+
+## Features
+
+- [x] Header section (Left, right)
+- [x] Sidebar section
+- [x] Body section
+- [x] Theme colors
+- [x] Cards
+- [x] Tabset
 - [x] Modal Dialog
 - [x] Form
 - [x] Buttons
