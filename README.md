@@ -62,13 +62,10 @@ The nextGenShinyApps package is available on CRAN and can be installed as shown 
 Check R CRAN link for vignettes
  
 ## More information
-
  
  - https://coursewhiz.org/mainsite/nextgenshinyapps
- 
- - https://nextgenshinyapps.obi.obianom.com
 
-## Statistics 
+## Statistic
 
 [![](https://cranlogs.r-pkg.org/badges/nextGenShinyApps)](https://cran.r-project.org/package=nextGenShinyApps)
 
