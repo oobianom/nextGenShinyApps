@@ -34,6 +34,12 @@ The nextGenShinyApps package is available on CRAN and can be installed as shown 
 
 ## Sample Demo Output 1
 
+### View the Shiny app demo
+
+[Link to demo](https://r2apps.shinyapps.io/nextgenshinyapps-tab/)
+
+### Image of what it looks like
+
 ![](https://nextgenshinyapps.obi.obianom.com/nextgenshinyapps.png)
 
 ## Sample Demo Output 2
