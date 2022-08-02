@@ -106,8 +106,9 @@ actionButton <- function(inputId, label, icon = NULL, width = NULL, ..., size = 
 #' @export
 #'
 
-submitButton <- function(text = "Apply Changes", icon = NULL, width = NULL, size = c("m", "xs", "s", "l", "xl"), style = c("default", "pill", "round", "clean"), bg.type = c("default", "primary", "secondary", "info", "success", "danger", "warning"), outline = FALSE) {
+submitButton <- function(inputId, text = "Apply Changes", icon = NULL, width = NULL, size = c("m", "xs", "s", "l", "xl"), style = c("default", "pill", "round", "clean"), bg.type = c("default", "primary", "secondary", "info", "success", "danger", "warning"), outline = FALSE) {
   masterButton(
+    inputId,
     text = text, icon = icon, width = width, size = match.arg(size),
     style = match.arg(style),
     bg.type = match.arg(bg.type), outline = outline
@@ -153,7 +154,7 @@ submitButton <- function(text = "Apply Changes", icon = NULL, width = NULL, size
 #'
 
 
-masterButton <- function(text = "Text", icon = NULL, width = NULL, size = c("m", "xs", "s", "l", "xl"), style = c("default", "pill", "round", "clean"), bg.type = c("default", "primary", "secondary", "info", "success", "danger", "warning"), outline = FALSE, extraClass = NULL, ...) {
+masterButton <- function(inputId, text = "Text", icon = NULL, width = NULL, size = c("m", "xs", "s", "l", "xl"), style = c("default", "pill", "round", "clean"), bg.type = c("default", "primary", "secondary", "info", "success", "danger", "warning"), outline = FALSE, extraClass = NULL, ...) {
   bg.type <- match.arg(bg.type)
   size <- match.arg(size)
   style <- match.arg(style)
@@ -165,6 +166,7 @@ masterButton <- function(text = "Text", icon = NULL, width = NULL, size = c("m",
   )
   outline <- ifelse(outline, "btn-outline-", "border-0 btn-")
   shiny::div(tags$button(
+    id = inputId,
     type = "submit", class = paste0("btn ", outline, bg.type),
     class = style,
     class = ifelse(text == "" & style == "rounded-circle", "btn-icon", ""),

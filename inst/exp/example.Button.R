@@ -49,7 +49,7 @@ ui <- fluidPage(
         tags$h2("Buttons with various styles"),
         header = FALSE,
         div(submitButton("Submit button with primary color", icon = icon("file"), size = "s", bg.type = "primary")), br(),
-        div(actionButton("button", "Action button with primary color", icon = icon("code"), bg.type = "primary")), br(),
+        div(actionButton("buttoxxn", "Action button with primary color", icon = icon("code"), bg.type = "primary")), br(),
         div(submitButton("Secondary color", icon = icon("folder"), bg.type = "secondary")), br(),
         div(submitButton("Success color", icon = icon("filter"), bg.type = "success")), br(),
         div(submitButton("Warning color", icon = icon("grid"), bg.type = "warning")), br(),
@@ -92,7 +92,7 @@ ui <- fluidPage(
 )
 
 # Define server content
-server <- function(input, output) {
+server <- function(input, output,session) {
 
   # Sample user-defined sever logic
 }
