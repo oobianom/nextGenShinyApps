@@ -121,7 +121,7 @@ card <- function(...,title = "Standard Card",  collapsed = FALSE, bg.fade = TRUE
 sortablegrid <- function(..., width = 6) {
   width <- as.integer(width)
   if (width < 1) width <- 1
-  shiny::div(class = paste0("col-", width, " p-0 sortable-grid ui-sortable"), ...)
+  shiny::div(class = paste0("col-12 col-md-", width, " p-0 sortable-grid ui-sortable"), ...)
 }
 
 #' Generate toolbar buttons
