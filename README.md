@@ -1,7 +1,7 @@
 # nextGenShinyApps: Tools in R for building the next generation of Shiny applications and responsive dashboards
 ## Official website: https://nextgenshinyapps.obi.obianom.com
 
-CRAN Version: [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/nextGenShinyApps)](https://cran.r-project.org/package=nextGenShinyApps)
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/nextGenShinyApps)](https://cran.r-project.org/package=nextGenShinyApps)
 
 ![](https://nextgenshinyapps.obi.obianom.com/nextgenshinyapps2.png)
 
