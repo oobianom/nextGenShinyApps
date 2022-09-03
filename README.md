@@ -3,7 +3,9 @@
 
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/nextGenShinyApps)](https://cran.r-project.org/package=nextGenShinyApps)
 
-![](https://nextgenshinyapps.obi.obianom.com/nextgenshinyapps2.png)
+![](https://nextgenshinyapps.obi.obianom.com/nextgenshinyapp-3.png)
+
+
 
 ## R package installation and usage
 The nextGenShinyApps package is available on CRAN and can be installed as shown below
