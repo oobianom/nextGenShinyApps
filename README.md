@@ -4,6 +4,7 @@
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/nextGenShinyApps)](https://cran.r-project.org/package=nextGenShinyApps)
 
 ![](https://nextgenshinyapps.obi.obianom.com/nextgenshinyapp-3.png)
+![](https://nextgenshinyapps.obi.obianom.com/designs/card-design.png)
 
 
 
