@@ -1,5 +1,6 @@
 # nextGenShinyApps: Tools in R for building the next generation of Shiny applications and responsive dashboards <img src="https://coursewhiz.org/shinyappsampleso/hex-nextGenShinyApps.png" width="300" align="right" >
 ## Official website: https://nextgenshinyapps.obi.obianom.com
+### Other packages required for nextGenShinyApps: https://depends.rpkg.net/package/nextGenShinyApps
 
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/nextGenShinyApps)](https://cran.r-project.org/package=nextGenShinyApps)
 
