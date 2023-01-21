@@ -121,7 +121,7 @@ textInput <- function(inputId, label, value = "", width = NULL, placeholder = NU
 #'
 #' @examples
 #'         checkboxInput("somevalue", "Some value", FALSE)
-#'         checkboxInput("somevalue", "Some value", FALSE)
+#'         checkboxInput("somevalue", "Some value", value = FALSE, inline = TRUE)
 #'         checkboxInput("somevalue", "Some value", FALSE)
 #'
 #'
