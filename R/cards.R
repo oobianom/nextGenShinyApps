@@ -118,6 +118,7 @@ card <- function(...,title = "Standard Card",  collapsed = FALSE, bg.fade = TRUE
 #' @examples
 #'  sortablegrid("item1",width=12)
 #' @export
+
 sortablegrid <- function(..., width = 6) {
   width <- as.integer(width)
   if (width < 1) width <- 1
