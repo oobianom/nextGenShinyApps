@@ -25330,53 +25330,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Internal method reference.
       jq_throttle;
 
-    // Method: jQuery.throttle
-    //
-    // Throttle execution of a function. Especially useful for rate limiting
-    // execution of handlers on events like resize and scroll. If you want to
-    // rate-limit execution of a function to a single time, see the
-    // <jQuery.debounce> method.
-    //
-    // In this visualization, | is a throttled-function call and X is the actual
-    // callback execution:
-    //
-    // > Throttled with `no_trailing` specified as false or unspecified:
-    // > ||||||||||||||||||||||||| (pause) |||||||||||||||||||||||||
-    // > X    X    X    X    X    X        X    X    X    X    X    X
-    // >
-    // > Throttled with `no_trailing` specified as true:
-    // > ||||||||||||||||||||||||| (pause) |||||||||||||||||||||||||
-    // > X    X    X    X    X             X    X    X    X    X
-    //
-    // Usage:
-    //
-    // > var throttled = jQuery.throttle( delay, [ no_trailing, ] callback );
-    // >
-    // > jQuery('selector').bind( 'someevent', throttled );
-    // > jQuery('selector').unbind( 'someevent', throttled );
-    //
-    // This also works in jQuery 1.4+:
-    //
-    // > jQuery('selector').bind( 'someevent', jQuery.throttle( delay, [ no_trailing, ] callback ) );
-    // > jQuery('selector').unbind( 'someevent', callback );
-    //
-    // Arguments:
-    //
-    //  delay - (Number) A zero-or-greater delay in milliseconds. For event
-    //    callbacks, values around 100 or 250 (or even higher) are most useful.
-    //  no_trailing - (Boolean) Optional, defaults to false. If no_trailing is
-    //    true, callback will only execute every `delay` milliseconds while the
-    //    throttled-function is being called. If no_trailing is false or
-    //    unspecified, callback will be executed one final time after the last
-    //    throttled-function call. (After the throttled-function has not been
-    //    called for `delay` milliseconds, the internal counter is reset)
-    //  callback - (Function) A function to be executed after delay milliseconds.
-    //    The `this` context and all arguments are passed through, as-is, to
-    //    `callback` when the throttled-function is executed.
-    //
-    // Returns:
-    //
-    //  (Function) A new, throttled, function.
+
 
     $.throttle = jq_throttle = function (delay, no_trailing, callback, debounce_mode) {
       // After wrapper has stopped being called, this timeout ensures that
@@ -25453,54 +25407,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return wrapper;
     };
 
-    // Method: jQuery.debounce
-    //
-    // Debounce execution of a function. Debouncing, unlike throttling,
-    // guarantees that a function is only executed a single time, either at the
-    // very beginning of a series of calls, or at the very end. If you want to
-    // simply rate-limit execution of a function, see the <jQuery.throttle>
-    // method.
-    //
-    // In this visualization, | is a debounced-function call and X is the actual
-    // callback execution:
-    //
-    // > Debounced with `at_begin` specified as false or unspecified:
-    // > ||||||||||||||||||||||||| (pause) |||||||||||||||||||||||||
-    // >                          X                                 X
-    // >
-    // > Debounced with `at_begin` specified as true:
-    // > ||||||||||||||||||||||||| (pause) |||||||||||||||||||||||||
-    // > X                                 X
-    //
-    // Usage:
-    //
-    // > var debounced = jQuery.debounce( delay, [ at_begin, ] callback );
-    // >
-    // > jQuery('selector').bind( 'someevent', debounced );
-    // > jQuery('selector').unbind( 'someevent', debounced );
-    //
-    // This also works in jQuery 1.4+:
-    //
-    // > jQuery('selector').bind( 'someevent', jQuery.debounce( delay, [ at_begin, ] callback ) );
-    // > jQuery('selector').unbind( 'someevent', callback );
-    //
-    // Arguments:
-    //
-    //  delay - (Number) A zero-or-greater delay in milliseconds. For event
-    //    callbacks, values around 100 or 250 (or even higher) are most useful.
-    //  at_begin - (Boolean) Optional, defaults to false. If at_begin is false or
-    //    unspecified, callback will only be executed `delay` milliseconds after
-    //    the last debounced-function call. If at_begin is true, callback will be
-    //    executed only at the first debounced-function call. (After the
-    //    throttled-function has not been called for `delay` milliseconds, the
-    //    internal counter is reset)
-    //  callback - (Function) A function to be executed after delay milliseconds.
-    //    The `this` context and all arguments are passed through, as-is, to
-    //    `callback` when the debounced-function is executed.
-    //
-    // Returns:
-    //
-    //  (Function) A new, debounced, function.
+
 
     $.debounce = function (delay, at_begin, callback) {
       return callback === undefined
