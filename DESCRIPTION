@@ -7,7 +7,7 @@ Authors@R: c(
 Maintainer: Obinna Obianom <idonshayo@gmail.com>
 Description: Responsive tools for designing and developing 'Shiny' dashboards and applications. The scripts and style sheets are based on 'jQuery' <https://jquery.com/> and 'Bootstrap' <https://getbootstrap.com/>.
 License: MIT + file LICENSE
-URL: https://github.com/oobianom/nextGenShinyApps
+URL: https://nextgenshinyapps.obi.obianom.com/
 BugReports: https://github.com/oobianom/nextGenShinyApps
 Depends: 
     R (>= 3.4)
