@@ -2,7 +2,8 @@
 
 ## Features
 
-Work in progress
+- [x] Fix minor bugs
+- [x] mainPanel and sidePanel
 
 # nextGenShinyApps 1.5
 
