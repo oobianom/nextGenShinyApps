@@ -18,6 +18,9 @@ Imports:
 Suggests: 
     rmarkdown,
     knitr,
+    r2dictionary,
+    r2resize,
+    r2social,
     qpdf
 Encoding: UTF-8
 VignetteBuilder: knitr
