@@ -5,7 +5,6 @@ Version: 1.6
 Authors@R: c(
     person("Obinna", "Obianom", email = "idonshayo@gmail.com", role = c("aut", "cre")))
 Maintainer: Obinna Obianom <idonshayo@gmail.com>
-Maintainer: Obinna Obianom <idonshayo@gmail.com>
 Description: Responsive tools for designing and developing 'Shiny' dashboards and applications. The scripts and style sheets are based on 'jQuery' <https://jquery.com/> and 'Bootstrap' <https://getbootstrap.com/>.
 License: MIT + file LICENSE
 URL: https://github.com/oobianom/nextGenShinyApps
