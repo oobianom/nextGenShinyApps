@@ -342,9 +342,37 @@ setup.toolbar.menu <- function(...) {
 #' @export
 
 mainPanel <- function(..., width = 8, border=FALSE, shadow=FALSE){
-  div(class = paste0("col-md-", width),
+  shiny::div(class = paste0("col-md-", width),
       class = ifelse(border,"border",""),
       class = ifelse(shadow,"shadow",""),
       role = "main",
       ...)
+}
+
+
+
+#' New sidebar panel to display content
+#'
+#' Customizable sidebar panel for inclusion of various UI elements
+#'
+#' @param ... List of content
+#' @param width Width of the sidebar panel
+#' @param border Should border be declared for the panel
+#' @param shadow Should a shadow be added to the panel
+#'
+#' @note For more information on the features of the sidebar panel, look through the Github examples
+#' @return Creates a container for displaying contents
+#'
+#' @examples
+#' \donttest{
+#'  sidebarPanel('content 2')
+#'  }
+#' @export
+
+sidebarPanel <- function(..., width = 4, border=FALSE, shadow=FALSE){
+  shiny::div(class = paste0("col-md-", width),
+      class = ifelse(border,"border",""),
+      class = ifelse(shadow,"shadow",""),
+      shiny::tags$form(class = "well",
+                role = "complementary", ...))
 }
