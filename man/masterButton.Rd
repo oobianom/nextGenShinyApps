@@ -5,13 +5,13 @@
 \title{Create a master button}
 \usage{
 masterButton(
+  inputId,
   text = "Text",
   icon = NULL,
   width = NULL,
   size = c("m", "xs", "s", "l", "xl"),
   style = c("default", "pill", "round", "clean"),
-  bg.type = c("default", "primary", "secondary", "info", "success", "danger",
-    "warning"),
+  bg.type = c("default", "primary", "secondary", "info", "success", "danger", "warning"),
   outline = FALSE,
   extraClass = NULL,
   ...

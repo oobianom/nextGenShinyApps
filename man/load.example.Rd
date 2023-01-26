@@ -5,8 +5,8 @@
 \title{Load examples for the package}
 \usage{
 load.example(
-  example = c("Plain", "noSideBar", "Card", "Tab", "Modal", "Form", "Button",
-    "Spinner", "Alert", "Accordion")
+  example = c("Plain", "noSideBar", "Card", "Tab", "Modal", "Form", "Button", "Spinner",
+    "Alert", "Accordion")
 )
 }
 \arguments{

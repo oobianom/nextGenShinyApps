@@ -28,7 +28,7 @@ For more information on the features of the form, visit the examples section of 
 }
 \examples{
         checkboxInput("somevalue", "Some value", FALSE)
-        checkboxInput("somevalue", "Some value", FALSE)
+        checkboxInput("somevalue", "Some value", value = FALSE, inline = TRUE)
         checkboxInput("somevalue", "Some value", FALSE)
 
 

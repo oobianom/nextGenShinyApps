@@ -320,3 +320,31 @@ setup.toolbar.menu <- function(...) {
     return(NULL)
   }
 }
+
+
+
+#' Main panel to display content
+#'
+#' Customizable main panel for inclusion of various UI elements
+#'
+#' @param ... List of content
+#' @param width Width of the main panel
+#' @param border Should border be declared for the panel
+#' @param shadow Should a shadow be added to the panel
+#'
+#' @note For more information on the features of the main panel, look through the Github examples
+#' @return Creates a container for displaying contents
+#'
+#' @examples
+#' \donttest{
+#'  mainPanel('content 1')
+#'  }
+#' @export
+
+mainPanel <- function(..., width = 8, border=FALSE, shadow=FALSE){
+  div(class = paste0("col-md-", width),
+      class = ifelse(border,"border",""),
+      class = ifelse(shadow,"shadow",""),
+      role = "main",
+      ...)
+}
