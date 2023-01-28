@@ -27,7 +27,7 @@ tabsetPanel(
 An HTML containing elements of a tabset to be embedded in a page
 }
 \description{
-Advanced tabset panel with styles and functionalities
+Advanced tabset panel with styles and features
 }
 \note{
 Many examples exist for the tabset, fid them using the package load.example function

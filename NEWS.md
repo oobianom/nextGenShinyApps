@@ -3,7 +3,7 @@
 ## Features
 
 - [x] Fix minor bugs
-- [x] mainPanel and sidePanel
+- [x] mainPanel and altPanel
 
 # nextGenShinyApps 1.5
 

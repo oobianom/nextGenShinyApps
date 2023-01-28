@@ -1,6 +1,6 @@
 #' Create an advanced tabset
 #'
-#' Advanced tabset panel with styles and functionalities
+#' Advanced tabset panel with styles and features
 #'
 #' @param ... Content of the tabset, created using the tabPanel for each individual item
 #' @param type Type of tabset to create, choices include "default","pills","clean","jPills","justified"

@@ -19,6 +19,9 @@ knitr::opts_chunk$set(
 #  # library
 #  library(shiny)
 #  library(nextGenShinyApps)
+#  library(r2social)
+#  library(r2resize)
+#  library(r2dictionary)
 #  if(interactive()) {
 #  # Define UI
 #  ui <- fluidPage(
@@ -33,6 +36,7 @@ knitr::opts_chunk$set(
 #      title = "NextGenShinyApp",
 #      "Sidebar content"
 #    ),
+#    empahsisCard(tags$h2("Welcome"),"Redefined cards with nextGenShinyApps. This box was created using r2resize R package", bg.color = "#ffffff"),
 #  
 #    # Body: Insert anything into the body--------------------
 #    tags$h2("Basic Moveable Advanced Card"),
@@ -46,6 +50,7 @@ knitr::opts_chunk$set(
 #          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi bibendum neque egestas congue quisque egestas",
 #          tags$br(), tags$br(),
 #          tags$h4("Input slider for the image"),
+#          HTML(r2dictionary::define("box")),
 #          sliderInput(
 #            inputId = "bins",
 #            label = "Number of bins:",
@@ -55,14 +60,17 @@ knitr::opts_chunk$set(
 #          )
 #        )
 #      ),
-#      column(
+#      mainPanel(
 #        width = 4,
 #        card(
-#          title = "Standard card with Images",
-#          plotOutput(outputId = "distPlot")
+#          title = "Standard card with a Figure",
+#          plotOutput(outputId = "distPlot"),
+#      HTML(r2dictionary::define("photo"))
 #        )
 #      )
-#    )
+#    ),
+#    r2social.scripts(),
+#    shareButton(link = "https://rpkg.net", position = "inline")
 #  )
 #  
 #  # Define server content

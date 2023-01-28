@@ -361,15 +361,15 @@ mainPanel <- function(..., width = 8, border=FALSE, shadow=FALSE){
 #' @param shadow Should a shadow be added to the panel
 #'
 #' @note For more information on the features of the sidebar panel, look through the Github examples
-#' @return Creates a container for displaying contents
+#' @return Creates an alternate container for displaying contents
 #'
 #' @examples
 #' \donttest{
-#'  sidebarPanel('content 2')
+#'  altPanel('content 2')
 #'  }
 #' @export
 
-sidebarPanel <- function(..., width = 4, border=FALSE, shadow=FALSE){
+altPanel <- function(..., width = 4, border=FALSE, shadow=FALSE){
   shiny::div(class = paste0("col-md-", width),
       class = ifelse(border,"border",""),
       class = ifelse(shadow,"shadow",""),

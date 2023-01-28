@@ -68,6 +68,7 @@ actionButton <- function(inputId, label, icon = NULL, width = NULL, ..., size = 
 #'
 #' Upgrade to the submitButton in 'Shiny' package
 #'
+#' @param inputId input id
 #' @param text Button text
 #' @param icon Choice of button icon
 #' @param width Width of the bottom
@@ -128,6 +129,7 @@ submitButton <- function(inputId, text = "Apply Changes", icon = NULL, width = N
 #'
 #' A master button creator
 #'
+#' @param inputId input id
 #' @param text Button text
 #' @param icon Choice of button icon
 #' @param width Width of the bottom

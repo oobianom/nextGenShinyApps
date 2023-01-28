@@ -18,6 +18,8 @@ masterButton(
 )
 }
 \arguments{
+\item{inputId}{input id}
+
 \item{text}{Button text}
 
 \item{icon}{Choice of button icon}
