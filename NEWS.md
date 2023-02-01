@@ -1,3 +1,11 @@
+# nextGenShinyApps 1.7
+
+## Planned Features
+
+- [ ] Better integration TBD
+
+
+
 # nextGenShinyApps 1.6
 
 ## Features
