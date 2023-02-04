@@ -2,7 +2,7 @@
 ## Official website: https://nextgenshinyapps.obi.obianom.com
 ### Other packages required for nextGenShinyApps: https://depends.rpkg.net/package/nextGenShinyApps
 
-### Get started with a sample code: https://nextgenshinyapps.obi.obianom.com/#startcode
+### Get started with a sample code: <br>https://nextgenshinyapps.obi.obianom.com/#startcode
 
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/nextGenShinyApps)](https://cran.r-project.org/package=nextGenShinyApps)
 
