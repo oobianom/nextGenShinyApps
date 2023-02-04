@@ -20,7 +20,11 @@ The nextGenShinyApps package is available on CRAN and can be installed as shown 
 
 `library(nextGenShinyApps)`
 
-### Get started with some of the examples
+### Get started with a sample code
+
+https://nextgenshinyapps.obi.obianom.com/#startcode
+
+### Get started by viewing some of the examples
 
 `load.example("Card")`
 
