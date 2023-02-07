@@ -161,6 +161,7 @@ paginatorBtn <- function(inputId, ..., active, buttons, nav.type=c("text","icons
       ),
       shiny::tags$li(
         class = "page-item active",
+        `aria-current`="page",
         shiny::tags$a(
           class = "page-link", href = "#", `tabindex` = "-1", `aria-disabled` = "true",
           "2"
