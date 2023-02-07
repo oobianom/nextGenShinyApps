@@ -121,7 +121,7 @@ submitButton <- function(inputId, text = "Apply Changes", icon = NULL, width = N
 
 #' Create a pagination set
 #'
-#' Pagination buttons and arrows
+#' Pagination buttons and arrows as of v1.7
 #'
 #' @param inputId input id
 #' @param active which is the active button
