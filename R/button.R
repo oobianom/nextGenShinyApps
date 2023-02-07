@@ -187,6 +187,10 @@ paginatorBtn <- function(inputId, ..., active, buttons, nav.type=c("text","icons
 
 
 
+updatePaginatorBtn <- function(){
+
+}
+
 
 #' Create a master button
 #'
