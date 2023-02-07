@@ -170,19 +170,19 @@ setup.toolbar.buttons <- function(...) {
     class = "panel-toolbar", role = "menu",
     if (show.collapse) {
       tags$a(
-        href = "#", class = "btn btn-panel hover-effect-dot js-panel-collapse waves-effect waves-themed",
+        href = "#", class = "btn btn-panel collapsetool hover-effect-dot js-panel-collapse waves-effect waves-themed",
         `data-toggle` = "tooltip", `data-offset` = "0,10", `data-original-title` = "Collapse"
       )
     },
     if (show.maximize) {
       tags$a(
-        href = "#", class = "btn btn-panel hover-effect-dot js-panel-fullscreen waves-effect waves-themed",
+        href = "#", class = "btn btn-panel maximizetool hover-effect-dot js-panel-fullscreen waves-effect waves-themed",
         `data-toggle` = "tooltip", `data-offset` = "0,10", `data-original-title` = "Fullscreen"
       )
     },
     if (show.close) {
       tags$a(
-        href = "#", class = "btn btn-panel hover-effect-dot js-panel-close waves-effect waves-themed",
+        href = "#", class = "btn btn-panel closetool hover-effect-dot js-panel-close waves-effect waves-themed",
         `data-toggle` = "tooltip", `data-offset` = "0,10", `data-original-title` = "Close"
       )
     }
