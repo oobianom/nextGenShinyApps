@@ -15,7 +15,7 @@ textAreaInput(
   placeholder = NULL,
   resize = c("both", "none", "vertical", "horizontal"),
   style = c("default", "pill", "round", "clean"),
-  border.type = c("none", "primary", "info", "success", "danger", "warning")
+  border.type = c("none", "primary", "secondary", "info", "success", "danger", "warning")
 )
 }
 \arguments{
@@ -39,7 +39,7 @@ textAreaInput(
 
 \item{style}{Style to adapt, options include "default", "pill", "round", "clean"}
 
-\item{border.type}{Add a border coloring using either of "none", "primary", "info", "success", "danger", "warning"}
+\item{border.type}{Add a border coloring using either of "none", "primary", "secondary", "info", "success", "danger", "warning"}
 }
 \value{
 HTML element of a textAreaInput

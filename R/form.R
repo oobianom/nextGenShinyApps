@@ -9,7 +9,7 @@
 #' @param placeholder A placeholder text
 #' @param width width of the text input
 #' @param style Style to adapt, options include "default", "pill", "round", "clean"
-#' @param border.type Add a border coloring using either of "none", "primary", "info", "success", "danger", "warning"
+#' @param border.type Add a border coloring using either of "none", "primary","secondary", "info", "success", "danger", "warning"
 #' @param prepend Add  a prepended text or icon
 #' @param append Add an appended text or icon
 #'
@@ -60,7 +60,7 @@
 #'
 #' @export
 
-textInput <- function(inputId, label, value = "", width = NULL, placeholder = NULL, size = c("m", "s", "l", "xl"), style = c("default", "pill", "round", "clean"), border.type = c("none", "primary", "info", "success", "danger", "warning"), prepend = NULL, append = NULL) {
+textInput <- function(inputId, label, value = "", width = NULL, placeholder = NULL, size = c("m", "s", "l", "xl"), style = c("default", "pill", "round", "clean"), border.type = c("none", "primary", "secondary", "info", "success", "danger", "warning"), prepend = NULL, append = NULL) {
   border.type <- match.arg(border.type)
   size <- match.arg(size)
   style <- match.arg(style)
@@ -155,7 +155,7 @@ checkboxInput <- function(inputId, label, value = FALSE, width = NULL, inline = 
 #' @param placeholder A placeholder text
 #' @param resize Make inout resizable, with choices "both", "none", "vertical", "horizontal"
 #' @param style Style to adapt, options include "default", "pill", "round", "clean"
-#' @param border.type Add a border coloring using either of "none", "primary", "info", "success", "danger", "warning"
+#' @param border.type Add a border coloring using either of "none", "primary", "secondary", "info", "success", "danger", "warning"
 #'
 #' @note For more information on the features of the form, visit the examples section of the help documentation
 #'
@@ -172,7 +172,7 @@ checkboxInput <- function(inputId, label, value = FALSE, width = NULL, inline = 
 
 textAreaInput <- function(inputId, label, value = "", width = NULL, height = NULL,
                           cols = NULL, rows = NULL, placeholder = NULL, resize = c("both", "none", "vertical", "horizontal"),
-                          style = c("default", "pill", "round", "clean"), border.type = c("none", "primary", "info", "success", "danger", "warning")) {
+                          style = c("default", "pill", "round", "clean"), border.type = c("none", "primary", "secondary", "info", "success", "danger", "warning")) {
   border.type <- match.arg(border.type)
   style <- match.arg(style)
   style <- switch(style,

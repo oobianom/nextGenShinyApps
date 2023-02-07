@@ -12,7 +12,7 @@ textInput(
   placeholder = NULL,
   size = c("m", "s", "l", "xl"),
   style = c("default", "pill", "round", "clean"),
-  border.type = c("none", "primary", "info", "success", "danger", "warning"),
+  border.type = c("none", "primary", "secondary", "info", "success", "danger", "warning"),
   prepend = NULL,
   append = NULL
 )
@@ -32,7 +32,7 @@ textInput(
 
 \item{style}{Style to adapt, options include "default", "pill", "round", "clean"}
 
-\item{border.type}{Add a border coloring using either of "none", "primary", "info", "success", "danger", "warning"}
+\item{border.type}{Add a border coloring using either of "none", "primary","secondary", "info", "success", "danger", "warning"}
 
 \item{prepend}{Add  a prepended text or icon}
 
