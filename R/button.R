@@ -140,6 +140,7 @@ submitButton <- function(inputId, text = "Apply Changes", icon = NULL, width = N
 #'
 
 paginatorBtn <- function(inputId, ..., active, buttons, nav.type=c("text","icons")) {
+  #unfinished
   shiny::tags$nav(
     id = inputId,
     shiny::tags$ul(
