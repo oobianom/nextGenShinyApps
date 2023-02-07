@@ -175,7 +175,7 @@ paginatorBtn <- function(inputId, ..., active, buttons, nav.type=c("text","icons
         )
       ),
       shiny::tags$li(
-        class = "page-item disabled",
+        class = "page-item",
         shiny::tags$a(
           class = "page-link", href = "#", `tabindex` = "-1", `aria-disabled` = "true",
           "Next",
