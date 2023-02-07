@@ -119,8 +119,71 @@ submitButton <- function(inputId, text = "Apply Changes", icon = NULL, width = N
 
 
 
+#' Create a pagination set
+#'
+#' Pagination buttons and arrows
+#'
+#' @param inputId input id
+#' @param active which is the active button
+#' @param buttons what buttons to include between the previous and next
+#' @param nav.type navigation icon types e.g 'text' or 'icons'
+#' @param ... Other inputs
+#'
+#' @return HTML of the submit buttons to insert into a page
+#'
+#' @examples
+#' if (interactive()) {
+#' paginatorBtn("sampleId"
+#' )
+#' }
+#' @export
+#'
 
-
+paginatorBtn <- function(inputId, ..., active, buttons, nav.type=c("text","icons")) {
+  shiny::tags$nav(
+    id = inputId,
+    shiny::tags$ul(
+      class = "pagination",
+      shiny::tags$li(
+        class = "page-item disabled",
+        shiny::tags$a(
+          class = "page-link", href = "#", `tabindex` = "-1", `aria-disabled` = "true",
+          "Previous",
+          shiny::tags$span(`aria-hidden` = "true", "&laquo")
+        )
+      ),
+      shiny::tags$li(
+        class = "page-item disabled",
+        shiny::tags$a(
+          class = "page-link", href = "#", `tabindex` = "-1", `aria-disabled` = "true",
+          "1"
+        )
+      ),
+      shiny::tags$li(
+        class = "page-item active",
+        shiny::tags$a(
+          class = "page-link", href = "#", `tabindex` = "-1", `aria-disabled` = "true",
+          "2"
+        )
+      ),
+      shiny::tags$li(
+        class = "page-item",
+        shiny::tags$a(
+          class = "page-link", href = "#", `tabindex` = "-1", `aria-disabled` = "true",
+          "3"
+        )
+      ),
+      shiny::tags$li(
+        class = "page-item disabled",
+        shiny::tags$a(
+          class = "page-link", href = "#", `tabindex` = "-1", `aria-disabled` = "true",
+          "Next",
+          shiny::tags$span(`aria-hidden` = "true", "&raquo")
+        )
+      )
+    )
+  )
+}
 
 
 
@@ -154,7 +217,6 @@ submitButton <- function(inputId, text = "Apply Changes", icon = NULL, width = N
 #' }
 #' @export
 #'
-
 
 masterButton <- function(inputId, text = "Text", icon = NULL, width = NULL, size = c("m", "xs", "s", "l", "xl"), style = c("default", "pill", "round", "clean"), bg.type = c("default", "primary", "secondary", "info", "success", "danger", "warning"), outline = FALSE, extraClass = NULL, ...) {
   bg.type <- match.arg(bg.type)
