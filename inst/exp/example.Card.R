@@ -5,7 +5,7 @@ library(nextGenShinyApps)
 # Define UI
 ui <- fluidPage(
   # Theme: Select color style from 1-13
-  style = "6",
+  style = "4",
 
   # Header: Insert header content using titlePanel ------------
   header = titlePanel(left = "A Demo to Showcase the Features of the nextGenShinyApp R package", right = "Image logo"),
