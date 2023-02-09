@@ -188,9 +188,29 @@ paginatorBtn <- function(inputId, ..., active, buttons, nav.type=c("text","icons
 }
 
 
-
-updatePaginatorBtn <- function(){
-
+#' Update a pagination set
+#'
+#' Update pagination buttons and arrows as of v1.7
+#'
+#' @param inputId input id
+#' @param active which is the active button
+#' @param buttons what buttons to include between the previous and next
+#' @param nav.type navigation icon types e.g 'text' or 'icons'
+#' @param ... Other inputs
+#'
+#' @return HTML of the submit buttons to insert into a page
+#'
+#' @examples
+#' if (interactive()) {
+#' updatePaginatorBtn("sampleId"
+#' )
+#' }
+#' @export
+#'
+#'
+updatePaginatorBtn <- function(inputId, ..., active, buttons, nav.type=c("text","icons")){
+# in development
+  message("This function is not fully developed")
 }
 
 
