@@ -5,23 +5,25 @@
 \title{Update a pagination set}
 \usage{
 updatePaginatorBtn(
+  session = getDefaultReactiveDomain(),
   inputId,
-  ...,
   active,
   buttons,
   nav.type = c("text", "icons")
 )
 }
 \arguments{
-\item{inputId}{input id}
+\item{session}{current session}
 
-\item{...}{Other inputs}
+\item{inputId}{input id}
 
 \item{active}{which is the active button}
 
 \item{buttons}{what buttons to include between the previous and next}
 
 \item{nav.type}{navigation icon types e.g 'text' or 'icons'}
+
+\item{...}{Other inputs}
 }
 \value{
 HTML of the submit buttons to insert into a page

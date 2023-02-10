@@ -192,6 +192,7 @@ paginatorBtn <- function(inputId, ..., active, buttons, nav.type=c("text","icons
 #'
 #' Update pagination buttons and arrows as of v1.7
 #'
+#' @param session current session
 #' @param inputId input id
 #' @param active which is the active button
 #' @param buttons what buttons to include between the previous and next
@@ -208,9 +209,12 @@ paginatorBtn <- function(inputId, ..., active, buttons, nav.type=c("text","icons
 #' @export
 #'
 #'
-updatePaginatorBtn <- function(inputId, ..., active, buttons, nav.type=c("text","icons")){
+updatePaginatorBtn <- function(session = getDefaultReactiveDomain(), inputId, active, buttons, nav.type=c("text","icons")){
 # in development
   message("This function is not fully developed")
+  nav.type = match.arg(nav.type)
+  message <- dropNulls(list(active=active, buttons=buttons, nav.type=nav.type))
+  session$sendInputMessage(inputId, message)
 }
 
 
