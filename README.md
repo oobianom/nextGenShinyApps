@@ -2,7 +2,7 @@
 ## Official website: https://nextgenshinyapps.obi.obianom.com
 ### Other packages required for nextGenShinyApps: https://depends.rpkg.net/package/nextGenShinyApps
 
-### <span style='color:red'>Get started with a sample codes</span>: <br>https://github.com/oobianom/nextGenShinyApps-Boilerplate-BlankApp
+### Get started with a sample codes: <br>https://github.com/oobianom/nextGenShinyApps-Boilerplate-BlankApp
 
 
 
