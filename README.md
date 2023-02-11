@@ -9,7 +9,7 @@
 ![](https://nextgenshinyapps.obi.obianom.com/nextgenshinyapp-3.png)
 ![](https://nextgenshinyapps.obi.obianom.com/designs/card-design.png)
 
-
+__Please note that at the moment, the nextGenShinyApps is not compatible with the plotly package__
 
 ## R package installation and usage
 The nextGenShinyApps package is available on CRAN and can be installed as shown below
