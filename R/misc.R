@@ -27,6 +27,7 @@ row <- function(...) {
 #' @export
 #'
 cssjsinclude <- function(template,color){
+  assign('.nGSAscripts',TRUE,envir = .GlobalEnv)
   htmltools::htmlDependency(
     "nextGenShinyApps", "1.4",
     src = template.loc(template),
