@@ -18,5 +18,5 @@ A list of files to be inserted in the header of a page
 Use the package scripts and stylesheets in a page
 }
 \examples{
-cssjsinclude('color','1')
+cssjsinclude('color','3')
 }
