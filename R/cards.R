@@ -49,6 +49,7 @@ card <- function(...,title = "Standard Card",  collapsed = FALSE, bg.fade = TRUE
     id = paste0("box", num),
     class = paste0("panel",draggable.class, add.collapsed.01),
     role = "widget",
+    ifelse(!exists('.nGSAscripts'),cssjsinclude(template, color),''),
     # header
     if (header) {
       div(
