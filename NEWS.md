@@ -9,6 +9,7 @@
 ## Features
 
 - [x] wrapper function
+- [x] paginatorBtn function
 
 
 
