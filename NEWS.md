@@ -1,8 +1,14 @@
-# nextGenShinyApps 1.7
+# nextGenShinyApps 1.8
 
 ## Planned Features
 
 - [ ] Better integration TBD
+
+# nextGenShinyApps 1.7
+
+## Features
+
+- [x] wrapper function
 
 
 

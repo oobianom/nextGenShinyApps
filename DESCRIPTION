@@ -1,7 +1,7 @@
 Package: nextGenShinyApps
 Type: Package
 Title: Advanced Tools for Building the Next Generation of 'Shiny' Applications and Dashboards 
-Version: 1.6
+Version: 1.7
 Authors@R: c(
     person("Obinna", "Obianom", email = "idonshayo@gmail.com", role = c("aut", "cre")))
 Maintainer: Obinna Obianom <idonshayo@gmail.com>
@@ -25,4 +25,4 @@ Encoding: UTF-8
 VignetteBuilder: knitr
 Language: en-US
 LazyData: false
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
