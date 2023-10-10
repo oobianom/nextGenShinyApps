@@ -30,7 +30,7 @@ dashboardBody <- function(header, ...) {
     header,
     tags$main(
       id = "js-page-content", role = "main", class = "page-content",
-      ...
+      rlang::list2(...)
     )
   )
 }
