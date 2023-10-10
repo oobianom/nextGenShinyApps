@@ -30,37 +30,7 @@ dashboardBody <- function(header, ...) {
     header,
     tags$main(
       id = "js-page-content", role = "main", class = "page-content",
-      rlang::list2(...)
+      ...
     )
   )
 }
-
-
-
-
-#' Panel wrapper
-#'
-#' Wrapper to hold all panels
-#'
-#' @param ... content of the container
-#'
-#' @return Container containing various panels
-#'
-#' @examples
-#' if (interactive()) {
-#' wrapper(
-#'   altPanel("Sample left content"),
-#'   mainPanel("Sample right content")
-#' )
-#' }
-#'
-#' @export
-#'
-#'
-wrapper <- function(...) {
-  shiny::div(
-    ...,
-    class = "row shiny-b-v-wrapper"
-  )
-}
-
