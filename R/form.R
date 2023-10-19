@@ -12,6 +12,7 @@
 #' @param border.type Add a border coloring using either of "none", "primary","secondary", "info", "success", "danger", "warning"
 #' @param prepend Add  a prepended text or icon
 #' @param append Add an appended text or icon
+#' @param disabled Boolean. If textInput should be disabled
 #'
 #' @note For more information on the features of the form, visit the examples section of the help documentation
 #' @return A HTML with modifications to th style information
@@ -60,7 +61,7 @@
 #'
 #' @export
 
-textInput <- function(inputId, label, value = "", width = NULL, placeholder = NULL, size = c("m", "s", "l", "xl"), style = c("default", "pill", "round", "clean"), border.type = c("none", "primary", "secondary", "info", "success", "danger", "warning"), prepend = NULL, append = NULL) {
+textInput <- function(inputId, label, value = "", width = NULL, placeholder = NULL, size = c("m", "s", "l", "xl"), style = c("default", "pill", "round", "clean"), border.type = c("none", "primary", "secondary", "info", "success", "danger", "warning"), prepend = NULL, append = NULL, disabled = FALSE) {
   border.type <- match.arg(border.type)
   size <- match.arg(size)
   style <- match.arg(style)
@@ -94,6 +95,7 @@ textInput <- function(inputId, label, value = "", width = NULL, placeholder = NU
           l = "lg",
           xl = "xl"
         )),
+        if(disabled) disabled = "true",
         value = value, placeholder = placeholder
       ),
       if (!is.null(append)) {
