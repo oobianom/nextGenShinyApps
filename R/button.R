@@ -127,7 +127,7 @@ submitButton <- function(inputId, text = "Apply Changes", icon = NULL, width = N
 #' @param active which is the active button
 #' @param buttons what buttons to include between the previous and next
 #' @param nav.type navigation icon types e.g 'text' or 'icons'
-#' @param ... Other inputs
+#' @param n Number of pages
 #'
 #' @return HTML of the submit buttons to insert into a page
 #'
@@ -139,7 +139,7 @@ submitButton <- function(inputId, text = "Apply Changes", icon = NULL, width = N
 #' @export
 #'
 
-paginatorBtn <- function(inputId, ..., active, buttons, nav.type=c("text","icons")) {
+paginatorBtn <- function(inputId,n, active, buttons, nav.type=c("text","icons")) {
   #unfinished
   shiny::tags$nav(
     id = inputId,
@@ -175,6 +175,15 @@ paginatorBtn <- function(inputId, ..., active, buttons, nav.type=c("text","icons
           "3"
         )
       ),
+      lapply(1:n, function(x)
+        shiny::tags$li(
+          class = "page-item",
+          shiny::tags$a(
+            class = "page-link", href = "#", `tabindex` = "-1", `aria-disabled` = "true",
+            x
+          )
+        )
+        ),
       shiny::tags$li(
         class = "page-item",
         shiny::tags$a(
