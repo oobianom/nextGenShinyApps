@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 console.log = function () {};
 var classHolder = document.getElementsByTagName("BODY")[0],
   /**
@@ -1013,7 +1014,7 @@ function sleep(ms) {
     }
 
   }).call(this);
-document.addEventListener("DOMContentLoaded", () => {
+
   /*!
  * jQuery JavaScript Library v3.4.1
  * https://jquery.com/
@@ -17697,6 +17698,7 @@ document.addEventListener("DOMContentLoaded", () => {
      * @argument value
      * @returns index or -1
      */
+
     function find(arr, check) {
       // use native find if supported
       if (Array.prototype.find) {
@@ -29398,5 +29400,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-
 });
+
