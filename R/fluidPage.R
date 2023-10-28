@@ -52,7 +52,6 @@ fluidPage <- function(..., id = NULL, header = NULL, sidebar = NULL, class = NUL
       id = id, class = paste0("app-container app-theme-gray ", class, " ", color),
       verify_fa = FALSE,
       rmarkdown::html_dependency_font_awesome(),
-      cssjsinclude(template, color),
       # modal
       if(!is.null(modal.header.links))
       modal.header(modal.header.links),
@@ -64,7 +63,8 @@ fluidPage <- function(..., id = NULL, header = NULL, sidebar = NULL, class = NUL
           class = "page-inner",
           sidebar,
           dashboardBody(header, ...)
-        )
+        ),
+      cssjsinclude(template, color)
       )
     )
   )

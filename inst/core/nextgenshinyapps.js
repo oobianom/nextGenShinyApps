@@ -1,5 +1,4 @@
-'use strict';
-
+console.log = function () {};
 var classHolder = document.getElementsByTagName("BODY")[0],
   /**
    * Load from localstorage
@@ -44,9 +43,12 @@ var saveSettings = function () {
 var resetSettings = function () {
   localStorage.setItem("themeSettings", "");
 }
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
+//sleep(500).then(() => {
 
-document.addEventListener("DOMContentLoaded", () => {
   (function () {
     var AjaxMonitor, Bar, DocumentMonitor, ElementMonitor, ElementTracker, EventLagMonitor, Evented,
       Events, NoTargetError, Pace, RequestIntercept, SOURCE_KEYS, Scaler, SocketRequestTracker,
@@ -1011,7 +1013,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
   }).call(this);
-
+document.addEventListener("DOMContentLoaded", () => {
   /*!
  * jQuery JavaScript Library v3.4.1
  * https://jquery.com/
@@ -1027,7 +1029,7 @@ document.addEventListener("DOMContentLoaded", () => {
  */
   (function (global, factory) {
 
-    "use strict";
+
 
     if (typeof module === "object" && typeof module.exports === "object") {
 
@@ -1057,7 +1059,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // throw exceptions when non-strict code (e.g., ASP.NET 4.5) accesses strict mode
 // arguments.callee.caller (trac-13335). But as of jQuery 3.0 (2016), strict mode should be common
 // enough that all such attempts are guarded in a try block.
-    "use strict";
+
 
     var arr = [];
 
@@ -16892,7 +16894,7 @@ document.addEventListener("DOMContentLoaded", () => {
       typeof define === 'function' && define.amd ? define(factory) :
         (global.Popper = factory());
   }(this, (function () {
-    'use strict';
+
 
     var isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined';
 
@@ -19488,7 +19490,7 @@ document.addEventListener("DOMContentLoaded", () => {
       typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) :
         (global = global || self, factory(global.bootstrap = {}, global.jQuery, global.Popper));
   }(this, function (exports, $, Popper) {
-    'use strict';
+
 
     $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
     Popper = Popper && Popper.hasOwnProperty('default') ? Popper['default'] : Popper;
@@ -23924,7 +23926,7 @@ document.addEventListener("DOMContentLoaded", () => {
  * http://bootboxjs.com/
  */
   (function (root, factory) {
-    'use strict';
+
     if (typeof define === 'function' && define.amd) {
       // AMD
       define(['jquery'], factory);
@@ -23936,7 +23938,7 @@ document.addEventListener("DOMContentLoaded", () => {
       root.bootbox = factory(root.jQuery);
     }
   }(this, function init($, undefined) {
-    'use strict';
+
 
     //  Polyfills Object.keys, if necessary.
     //  @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
@@ -25248,6 +25250,7 @@ document.addEventListener("DOMContentLoaded", () => {
  * rgb2hex(hex_value)
  */
   function rgb2hex(rgb) {
+    if(rgb != null){
     rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
 
     function hex(x) {
@@ -25255,6 +25258,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
+    }
   }
 
   /*!
@@ -25884,7 +25888,7 @@ document.addEventListener("DOMContentLoaded", () => {
  */
 
   ;(function (window, factory) {
-    'use strict';
+
 
     // AMD. Register as an anonymous module.  Wrap in function so we have access
     // to root via `this`.
@@ -25906,7 +25910,7 @@ document.addEventListener("DOMContentLoaded", () => {
       window.Waves = factory.call(window);
     }
   })(typeof global === 'object' ? global : this, function () {
-    'use strict';
+
 
     var Waves = Waves || {};
     var $$ = document.querySelectorAll.bind(document);
@@ -26486,7 +26490,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   (function ($, window, document, undefined) {
 
-    //"use strict";
+    //
 
     var pluginName = 'smartPanel';
 

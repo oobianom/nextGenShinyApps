@@ -152,5 +152,5 @@ tabsetPanel <- function(..., type = c("default", "pills", "clean", "jPills", "ju
 #'
 #'
 tabPanel <- function(title, ...) {
-  list(title = title, content = div(...))
+  list(title = title, content = htmltools::div(...))
 }
