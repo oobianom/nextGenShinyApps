@@ -1,11 +1,11 @@
 Package: nextGenShinyApps
 Type: Package
-Title: Advanced Tools for Building the Next Generation of 'Shiny' Applications and Dashboards 
+Title: Craft Exceptional 'R Shiny' Applications and Dashboards with Novel Responsive Tools 
 Version: 1.7
 Authors@R: c(
     person("Obinna", "Obianom", email = "idonshayo@gmail.com", role = c("aut", "cre")))
 Maintainer: Obinna Obianom <idonshayo@gmail.com>
-Description: Responsive tools for designing and developing 'Shiny' dashboards and applications. The scripts and style sheets are based on 'jQuery' <https://jquery.com/> and 'Bootstrap' <https://getbootstrap.com/>.
+Description: Nove responsive tools for designing and developing 'Shiny' dashboards and applications. The scripts and style sheets are based on 'jQuery' <https://jquery.com/> and 'Bootstrap' <https://getbootstrap.com/>.
 License: MIT + file LICENSE
 URL: https://nextgenshinyapps.obi.obianom.com
 BugReports: https://github.com/oobianom/nextGenShinyApps
