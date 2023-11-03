@@ -14,7 +14,8 @@ Depends:
 Imports: 
     utils,
     shiny,
-    htmltools
+    htmltools,
+    quickcode
 Suggests: 
     rmarkdown,
     knitr,

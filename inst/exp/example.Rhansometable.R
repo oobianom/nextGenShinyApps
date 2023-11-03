@@ -1,7 +1,6 @@
 #example rhandsome
-library(rhandsontable)
-library(shiny)
-library(nextGenShinyApps)
+quickcode::clean(clearPkgs = T)
+libraryAll(rhandsontable,shiny,nextGenShinyApps)
 
 
 ui <- fluidPage(
