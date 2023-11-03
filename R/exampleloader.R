@@ -14,7 +14,7 @@
 #'
 #' @export
 
-load.example <- function(example = c("Plain", "noSideBar", "Card", "Tab", "Modal", "Form", "Button", "Spinner", "Alert", "Accordion")) {
+load.example <- function(example = c("Plain", "noSideBar","Plotly","Rhansometable", "Card", "Tab", "Modal", "Form", "Button", "Spinner", "Alert", "Accordion")) {
   example <- match.arg(example)
   loc.path <- template.loc("exp")
   loc.path.file <- paste0(loc.path, "/example.", example, ".R")
