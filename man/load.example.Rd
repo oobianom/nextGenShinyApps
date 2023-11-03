@@ -5,12 +5,12 @@
 \title{Load examples for the package}
 \usage{
 load.example(
-  example = c("Plain", "noSideBar", "Card", "Tab", "Modal", "Form", "Button", "Spinner",
-    "Alert", "Accordion")
+  example = c("Plain", "noSideBar", "Plotly", "Rhansometable", "Card", "Tab", "Modal",
+    "Form", "Button", "Spinner", "Alert", "Accordion")
 )
 }
 \arguments{
-\item{example}{choose the example to show - "Plain","noSideBar","Card","Tab","Modal","Form","Button","Spinner","Alert","Accordion"}
+\item{example}{choose the example to show - "Plain","noSideBar","Plotly","Rhansometable", "Card","Tab","Modal","Form","Button","Spinner","Alert","Accordion"}
 }
 \value{
 A rendered HTML of the user specified example file
@@ -18,6 +18,11 @@ A rendered HTML of the user specified example file
 \description{
 Example shiny applications spanning aspects of the package
 }
+\section{Options for example}{
+
+"Plain", "noSideBar","Plotly","Rhansometable", "Card", "Tab", "Modal", "Form", "Button", "Spinner", "Alert", "Accordion"
+}
+
 \examples{
 \donttest{
 if (interactive()) {
