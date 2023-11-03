@@ -113,6 +113,7 @@ card <- function(...,title = "Standard Card",  collapsed = FALSE, bg.fade = TRUE
 #'
 #' @param ... The elements to include within the body of the grid
 #' @param width The width of the grid
+#' @param id unique id of grid
 #'
 #' @note For more information on the features of a sortable grid, visit the examples section of the help documentation
 #' @return HTML code of a container that allows items within it to be draggable
