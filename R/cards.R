@@ -12,6 +12,7 @@
 #' @param toolbar The default is NULL, which means all toolbar will be displayed use this to set what toolbar to show.
 #' @param header If \code{FALSE}, the header will be excluded
 #' @param draggable If \code{FALSE}, the card will not be draggable
+#' @param id unique card id
 #'
 #' @note For more information on the features of the card, visit the examples section of the help documentation
 #' @return HTML code of the container with a class called card that holds the items
@@ -31,7 +32,7 @@
 #'  }
 #' @export
 
-card <- function(...,title = "Standard Card",  collapsed = FALSE, bg.fade = TRUE, width = 12, alert.text = NULL, alert.bg = c("primary", "warning", "secondary", "info", "success", "danger"), toolbar = NULL, header = TRUE, draggable = TRUE) {
+card <- function(...,title = "Standard Card",  collapsed = FALSE, bg.fade = TRUE, width = 12, alert.text = NULL, alert.bg = c("primary", "warning", "secondary", "info", "success", "danger"), toolbar = NULL, header = TRUE, draggable = TRUE, id = NULL) {
   add.collapsed.01 <- ifelse(collapsed, " panel-collapsed ", "")
   alert.bg <- match.arg(alert.bg)
   if (collapsed) {
@@ -98,7 +99,7 @@ card <- function(...,title = "Standard Card",  collapsed = FALSE, bg.fade = TRUE
     )
   )
   if (draggable) {
-    sortablegrid(width = width, content.main)
+    sortablegrid(width = width, content.main, id = id)
   } else {
     column(width = width, content.main)
   }
@@ -120,10 +121,10 @@ card <- function(...,title = "Standard Card",  collapsed = FALSE, bg.fade = TRUE
 #'  sortablegrid("item1",width=12)
 #' @export
 
-sortablegrid <- function(..., width = 6) {
+sortablegrid <- function(..., width = 6, id = NULL) {
   width <- as.integer(width)
   if (width < 1) width <- 1
-  shiny::div(class = paste0("col-12 col-md-", width, " p-0 sortable-grid ui-sortable"), ...)
+  shiny::div(id = ifelse(is.null(id),"",id),class = paste0("col-12 col-md-", width, " p-0 sortable-grid ui-sortable"), ...)
 }
 
 #' Generate toolbar buttons
