@@ -4,12 +4,12 @@
 \alias{paginatorBtn}
 \title{Create a pagination set}
 \usage{
-paginatorBtn(inputId, ..., active, buttons, nav.type = c("text", "icons"))
+paginatorBtn(inputId, n, active, buttons, nav.type = c("text", "icons"))
 }
 \arguments{
 \item{inputId}{input id}
 
-\item{...}{Other inputs}
+\item{n}{Number of pages}
 
 \item{active}{which is the active button}
 

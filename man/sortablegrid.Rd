@@ -4,12 +4,14 @@
 \alias{sortablegrid}
 \title{Generate a sortable grid}
 \usage{
-sortablegrid(..., width = 6)
+sortablegrid(..., width = 6, id = NULL)
 }
 \arguments{
 \item{...}{The elements to include within the body of the grid}
 
 \item{width}{The width of the grid}
+
+\item{id}{unique id of grid}
 }
 \value{
 HTML code of a container that allows items within it to be draggable

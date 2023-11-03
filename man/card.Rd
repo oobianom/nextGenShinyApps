@@ -14,7 +14,8 @@ card(
   alert.bg = c("primary", "warning", "secondary", "info", "success", "danger"),
   toolbar = NULL,
   header = TRUE,
-  draggable = TRUE
+  draggable = TRUE,
+  id = NULL
 )
 }
 \arguments{
@@ -37,6 +38,8 @@ card(
 \item{header}{If \code{FALSE}, the header will be excluded}
 
 \item{draggable}{If \code{FALSE}, the card will not be draggable}
+
+\item{id}{unique card id}
 }
 \value{
 HTML code of the container with a class called card that holds the items
