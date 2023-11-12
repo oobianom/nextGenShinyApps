@@ -1,7 +1,7 @@
 Package: nextGenShinyApps
 Type: Package
 Title: Craft Exceptional 'R Shiny' Applications and Dashboards with Novel Responsive Tools 
-Version: 1.7
+Version: 2.0
 Authors@R: c(
     person("Obinna", "Obianom", email = "idonshayo@gmail.com", role = c("aut", "cre")))
 Maintainer: Obinna Obianom <idonshayo@gmail.com>
