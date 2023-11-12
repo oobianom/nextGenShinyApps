@@ -17,6 +17,8 @@ knitr::opts_chunk$set(
 
 Advanced tools and styling to allow the creation of the next generation of dashboards and shiny applications.
 
+![](https://nextgenshinyapps.obi.obianom.com/adslogo2.png)
+
 ## Installation and Library Attachment
 
 The nextGenShinyApps package is available on CRAN and can be installed as shown below
