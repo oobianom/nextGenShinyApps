@@ -345,7 +345,7 @@ setup.toolbar.menu <- function(...) {
 #' @export
 
 mainPanel <- function(..., width = 8, border=FALSE, shadow=FALSE){
-  shiny::div(class = paste0("col-md-", width),
+  shiny::div(class = paste0("col-12 col-md-", width),
       class = ifelse(border,"border",""),
       class = ifelse(shadow,"shadow",""),
       role = "main",
@@ -373,7 +373,7 @@ mainPanel <- function(..., width = 8, border=FALSE, shadow=FALSE){
 #' @export
 
 altPanel <- function(..., width = 4, border=FALSE, shadow=FALSE){
-  shiny::div(class = paste0("col-md-", width),
+  shiny::div(class = paste0("col-12 col-md-", width),
       class = ifelse(border,"border",""),
       class = ifelse(shadow,"shadow",""),
       shiny::tags$form(class = "well",

@@ -2,7 +2,7 @@
 
 ## Planned Features
 
- - [ ] wrapper function
+
  - [ ] paginatorBtn function
  - [ ] Better integration TBD
 
@@ -12,6 +12,7 @@
 
  - [x] Major bugs fixes
  - [x] NOW compatible with all major packages including the htmlwidgets,rhandsontable and plotly packages
+ - [x] wrapper function to hold containers
 
 
 

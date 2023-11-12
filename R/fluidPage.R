@@ -69,3 +69,25 @@ fluidPage <- function(..., id = NULL, header = NULL, sidebar = NULL, class = NUL
     )
   )
 }
+
+
+#' A wrapper for panels
+#'
+#' Create a wrapper div for pannels
+#'
+#' @param ... div contents
+#' @param bg background color of the wrapper
+#'
+#' @return a container for other containers
+#'
+#' @examples
+#' wrapper(altPanel("hello"),mainPanel("test"))
+#' wrapper(mainPanel("hello"),shiny::column(width=2,"test"))
+#' @export
+#'
+
+wrapper <- function(..., bg = c("default", "primary", "secondary", "warning", "info", "danger", "success")) {
+  bg <- match.arg(bg)
+  htmltools::div(class = "row dwrapper", class = paste0("bg-", bg), ...)
+}
+
