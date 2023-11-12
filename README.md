@@ -1,4 +1,4 @@
-<img src="https://nextgenshinyapps.obi.obianom.com/adslogo2.png" width = "300">
+<img src="https://nextgenshinyapps.obi.obianom.com/adslogo2.png" width = "500">
 
 # nextGenShinyApps: Craft Exceptional R Shiny Dashboards with Novel Responsive Tools <img src="https://coursewhiz.org/shinyappsampleso/hex-nextGenShinyApps.png" width="200" align="right" >
 ## Official website: https://nextgenshinyapps.obi.obianom.com
