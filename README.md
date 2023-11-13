@@ -8,7 +8,7 @@
 
 __Please note that the nextGenShinyApps 1.7 is NOW compatible with the htmlwidgets,rhandsontable and plotly packages. This is being worked on, but there is not currently a completion date.__
 
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/nextGenShinyApps)](https://cran.r-project.org/package=nextGenShinyApps)
+
 
 ![](https://nextgenshinyapps.obi.obianom.com/nextgenshinyapp-3.png)
 ![](https://nextgenshinyapps.obi.obianom.com/designs/card-design.png)
@@ -151,5 +151,5 @@ Check R CRAN link for vignettes
 
 [![](https://cranlogs.r-pkg.org/badges/nextGenShinyApps)](https://cran.r-project.org/package=nextGenShinyApps)
 
-
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/nextGenShinyApps)](https://cran.r-project.org/package=nextGenShinyApps)
 
