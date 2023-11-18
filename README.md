@@ -28,7 +28,7 @@ The nextGenShinyApps package is available on CRAN and can be installed as shown 
 
 ### Simple code to start
 
-```
+```diff
 # library
 library(shiny)
 library(nextGenShinyApps)
@@ -99,19 +99,26 @@ shinyApp(ui, server)
 
 ### Get started by viewing some of the examples
 
-`load.example("Card")`
+```diff
+- load.example("Card")
 
-`load.example("Plain")`
+- load.example("Plain")
 
-`load.example("noSideBar")`
+- load.example("noSideBar")
 
-`load.example("Tab")`
+- load.example("Tab")
 
-`load.example("Modal")`
+- load.example("Modal")
 
-`load.example("Alert")`
+- load.example("Alert")
 
-`load.example("Accordion")`
+- load.example("Accordion")
+
+- load.example("Plotly")
+
+- load.example("Rhansometable")
+
+```
 
 
 ## Sample Demo Output 1

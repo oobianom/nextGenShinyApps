@@ -18,18 +18,86 @@
 #' @return HTML code of the container with a class called card that holds the items
 #'
 #' @examples
+#' if(FALSE){
+#'
+#' # Example 1
 #' if (interactive()) {
-#'  card(
-#'    title = "Standard card",
-#'    collapsed = TRUE,
-#'    alert.text = "An alert for the content",
-#'    alert.bg = "warning",
-#'    toolbar = list(collapse = TRUE,
-#'    maximize = TRUE, close = FALSE, menu = TRUE),
-#'    shiny::h3("Sample text"),
-#'    "Lorem ipsum dolor sit a"
-#'  )
-#'  }
+#'   library(shiny)
+#'   library(nextGenShinyApps)
+#'
+#'   shiny::shinyApp(
+#'     ui = fluidPage(
+#'       style = "4",
+#'       custom.bg.color = "lightblue",
+#'       sidebar = NULL,
+#'       header = titlePanel(left="Card Ex2"),
+#'       wrapper(
+#'         altPanel(
+#'                  card(
+#'                    title = "Standard card",
+#'                    collapsed = TRUE,
+#'                    alert.text = "An alert2 for the content",
+#'                    alert.bg = "warning",
+#'                    toolbar = list(collapse = TRUE,
+#'                                   maximize = TRUE,
+#'                                   close = FALSE,
+#'                                   menu = TRUE),
+#'                    shiny::h3("Sample text"),
+#'                    "Lorem ipsum dolor sit a"
+#'                  )),
+#'         mainPanel(
+#'           card(
+#'             title = "Standard card 2",
+#'             shiny::h1("Sample text"),
+#'             "Lorem ipsum dolor sit a"
+#'           ))
+#'       )
+#'     ),
+#'     server = function(input, output) {
+#'     }
+#'   )
+#' }
+#'
+#' # Example 2
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(nextGenShinyApps)
+#'
+#'   shiny::shinyApp(
+#'     ui = fluidPage(
+#'       style = "8",
+#'       custom.bg.color = "#d9d9d9",
+#'       sidebar = NULL,
+#'       header = titlePanel(left="Card Ex1"),
+#'       wrapper(
+#'         altPanel(width = 12,
+#'                  card(
+#'                    title = "Standard card",
+#'                    alert.text = "An alert1 for the content",
+#'                    shiny::h3("Sample text"),
+#'                    "Lorem ipsum dolor sit a"
+#'                  ),
+#'                  card(
+#'                    title = "Standard card",
+#'                    collapsed = TRUE,
+#'                    alert.text = "An alert2 for the content",
+#'                    alert.bg = "warning",
+#'                    toolbar = list(collapse = TRUE,
+#'                                   maximize = TRUE,
+#'                                   close = FALSE,
+#'                                   menu = TRUE),
+#'                    shiny::h3("Sample text"),
+#'                    "Lorem ipsum dolor sit a"
+#'                  ))
+#'       )
+#'     ),
+#'     server = function(input, output) {
+#'     }
+#'   )
+#' }
+#'
+#'
+#' }
 #' @export
 
 card <- function(...,title = "Standard Card",  collapsed = FALSE, bg.fade = TRUE, width = 12, alert.text = NULL, alert.bg = c("primary", "warning", "secondary", "info", "success", "danger"), toolbar = NULL, header = TRUE, draggable = TRUE, id = NULL) {

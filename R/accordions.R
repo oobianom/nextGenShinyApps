@@ -9,8 +9,10 @@
 #' @return HTML of a container with a class called accordion
 #' @examples
 #' \donttest{
+#' if(FALSE){
+#'
 #' # Example 1
-#' if (interactive()) {
+#'
 #'   library(shiny)
 #'   library(nextGenShinyApps)
 #'
@@ -36,10 +38,10 @@
 #'     server = function(input, output) {
 #'     }
 #'   )
-#' }
+#'
 #'
 #' # Example 2
-#' if (interactive()) {
+#'
 #'   library(shiny)
 #'   library(nextGenShinyApps)
 #'
@@ -67,6 +69,10 @@
 #'     server = function(input, output) {
 #'     }
 #'   )
+#'
+#'
+#' }
+#'
 #' }
 #'
 #' @export
