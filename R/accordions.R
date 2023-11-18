@@ -9,6 +9,7 @@
 #' @return HTML of a container with a class called accordion
 #' @examples
 #' \donttest{
+#' # Example 1
 #' if (interactive()) {
 #'   library(shiny)
 #'   library(nextGenShinyApps)
@@ -16,20 +17,18 @@
 #'   shiny::shinyApp(
 #'     ui = fluidPage(
 #'       style = "8",
-#'       custom.bg.color = "white",
+#'       custom.bg.color = "#d9d9d9",
 #'       sidebar = NULL,
-#'       header = NULL,
+#'       header = titlePanel(left="Sample Ex1"),
 #'       accordion(
 #'         id = "accordion5",
-#'         style = "2",
+#'         style = "4",
 #'         accordionItem(
 #'           title = "Accordion 1",
-#'           icon = shiny::icon("edit"),
 #'           "Massa sed elementum sus"
 #'         ),
 #'         accordionItem(
 #'           title = "Accordion 2",
-#'           icon = shiny::icon("cog"),
 #'           "Auctor neque etiam non."
 #'         )
 #'       )
@@ -38,6 +37,36 @@
 #'     }
 #'   )
 #' }
+#'
+#' # Example 2
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(nextGenShinyApps)
+#'
+#'   shiny::shinyApp(
+#'     ui = fluidPage(
+#'       style = "8",
+#'       custom.bg.color = "#f7c4bb",
+#'       sidebar = NULL,
+#'       header = titlePanel(left="Sample Ex2"),
+#'       accordion(
+#'         id = "accordion5",
+#'         style = "1",
+#'         accordionItem(
+#'           title = "Accordion A",
+#'           icon = shiny::icon("trash"),
+#'           "Massa sed elementum sus"
+#'         ),
+#'         accordionItem(
+#'           title = "Accordion B",
+#'           icon = shiny::icon("edit"),
+#'           "Auctor neque etiam non."
+#'         )
+#'       )
+#'     ),
+#'     server = function(input, output) {
+#'     }
+#'   )
 #' }
 #'
 #' @export
