@@ -9,7 +9,7 @@
 #' @return HTML of a container with a class called accordion
 #' @examples
 #' \donttest{
-#' if(FALSE){
+#' if(interactive()){
 #'
 #' # Example 1
 #'

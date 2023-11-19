@@ -18,7 +18,6 @@
 #' @return HTML code of the container with a class called card that holds the items
 #'
 #' @examples
-#' if(FALSE){
 #'
 #' # Example 1
 #' if (interactive()) {
@@ -97,7 +96,6 @@
 #' }
 #'
 #'
-#' }
 #' @export
 
 card <- function(...,title = "Standard Card",  collapsed = FALSE, bg.fade = TRUE, width = 12, alert.text = NULL, alert.bg = c("primary", "warning", "secondary", "info", "success", "danger"), toolbar = NULL, header = TRUE, draggable = TRUE, id = NULL) {
