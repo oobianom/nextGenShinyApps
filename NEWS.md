@@ -5,6 +5,10 @@
 
  - [ ] paginatorBtn function
  - [ ] Better integration TBD
+ - [ ] More inputs
+    - [ ] knobInput
+    - [ ] updateKnobInput
+    - [ ] ...
 
 # nextGenShinyApps 2.0
 
