@@ -23,13 +23,13 @@ row <- function(...) {
 #'
 #' @return A list of files to be inserted in the header of a page
 #' @examples
-#' cssjsinclude('color','3')
+#' cssjsinclude('core','3')
 #' @export
 #'
 cssjsinclude <- function(template,color){
   assign('.nGSAscripts',TRUE)
   htmltools::htmlDependency(
-    "nextGenShinyApps", "1.7",
+    "nextGenShinyApps", "2.0",
     src = template.loc(template),
     script = c("nextgenshinyapps.js"),
     stylesheet = c("nextgenshinyapps.css", paste0("cust-theme-",color,".css")),
