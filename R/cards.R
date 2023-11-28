@@ -99,12 +99,24 @@
 #'
 #' @export
 
-card <- function(...,title = "Standard Card",  collapsed = FALSE, bg.fade = TRUE, width = 12, header.bg = 0:12, alert.text = NULL, alert.bg = c("primary", "warning", "secondary", "info", "success", "danger"), toolbar = NULL, header = TRUE, draggable = TRUE, id = NULL) {
+card <- function(...,title = "Standard Card",  collapsed = FALSE, bg.fade = TRUE, width = 12, header.bg = letters[1:13], alert.text = NULL, alert.bg = c("primary", "warning", "secondary", "info", "success", "danger"), toolbar = NULL, header = TRUE, draggable = TRUE, id = NULL) {
   add.collapsed.01 <- ifelse(collapsed, " panel-collapsed ", "")
   alert.bg <- match.arg(alert.bg)
   header.bg <- match.arg(header.bg)[1]
   header.bg.add <- switch (header.bg,
-                           "0" = "", "1" = "bg-primary-700 bg-success-gradient", "2" = "bg-primary-500 bg-info-gradient", "3" = "bg-primary-600 bg-primary-gradient", "4" = "bg-info-600 bg-primray-gradient", "5" = "bg-info-600 bg-info-gradient", "6" = "bg-info-700 bg-success-gradient", "7" = "bg-success-900 bg-info-gradient", "8" = "bg-success-700 bg-primary-gradient", "9" = "bg-success-600 bg-success-gradient", "10" = "bg-danger-900 bg-info-gradient", "11" = "bg-fusion-400 bg-fusion-gradient", "12" = "bg-faded"
+                           "a" = "",
+                           "b" = "bg-primary-700 bg-success-gradient",
+                           "c" = "bg-primary-500 bg-info-gradient",
+                           "d" = "bg-primary-600 bg-primary-gradient",
+                           "e" = "bg-info-600 bg-primray-gradient",
+                           "f" = "bg-info-600 bg-info-gradient",
+                           "g" = "bg-info-700 bg-success-gradient",
+                           "h" = "bg-success-900 bg-info-gradient",
+                           "i" = "bg-success-700 bg-primary-gradient",
+                           "j" = "bg-success-600 bg-success-gradient",
+                           "k" = "bg-danger-900 bg-info-gradient",
+                           "l" = "bg-fusion-400 bg-fusion-gradient",
+                           "m" = "bg-faded"
   )
   if (collapsed) {
     add.collapsed.01 <- " panel-collapsed"
@@ -120,13 +132,13 @@ card <- function(...,title = "Standard Card",  collapsed = FALSE, bg.fade = TRUE
   content.main <- div(
     id = paste0("box", num),
     class = paste0("panel",draggable.class, add.collapsed.01),
-    `data-panel-attstyle`= trimws(header.bg.add),
+    `data-panel-attstyle`= header.bg.add,
     role = "widget",
     #ifelse(!exists('.nGSAscripts'),cssjsinclude('core','3'),''),
     # header
     if (header) {
       div(
-        class = paste0("panel-hdr",header.bg.add),
+        class = paste0("panel-hdr ",header.bg.add),
         role = "heading",
         h2(class = "js-get-date ui-sortable-handle", tags$b(title)),
         div(
