@@ -10,6 +10,7 @@ card(
   collapsed = FALSE,
   bg.fade = TRUE,
   width = 12,
+  header.bg = 0:12,
   alert.text = NULL,
   alert.bg = c("primary", "warning", "secondary", "info", "success", "danger"),
   toolbar = NULL,
@@ -28,6 +29,8 @@ card(
 \item{bg.fade}{If \code{TRUE}, the background will be faded if a background exists}
 
 \item{width}{Select a width from 1 to 12 to indicate the size of the card}
+
+\item{header.bg}{Header background color style, choices 1 to 11}
 
 \item{alert.text}{Enter text for the alert portion. Leave as NULL to exclude the alert}
 
