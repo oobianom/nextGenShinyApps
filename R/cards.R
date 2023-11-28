@@ -7,6 +7,7 @@
 #' @param collapsed If \code{TRUE}, the card is collapsed. The default is \code{FALSE}
 #' @param bg.fade If \code{TRUE}, the background will be faded if a background exists
 #' @param width Select a width from 1 to 12 to indicate the size of the card
+#' @param header.bg Header background color style, choices 1 to 11
 #' @param alert.text Enter text for the alert portion. Leave as NULL to exclude the alert
 #' @param alert.bg Indicate the type of alert to include, choices are "primary", "warning", "secondary", "info", "success", "danger"
 #' @param toolbar The default is NULL, which means all toolbar will be displayed use this to set what toolbar to show.
@@ -98,9 +99,13 @@
 #'
 #' @export
 
-card <- function(...,title = "Standard Card",  collapsed = FALSE, bg.fade = TRUE, width = 12, alert.text = NULL, alert.bg = c("primary", "warning", "secondary", "info", "success", "danger"), toolbar = NULL, header = TRUE, draggable = TRUE, id = NULL) {
+card <- function(...,title = "Standard Card",  collapsed = FALSE, bg.fade = TRUE, width = 12, header.bg = 0:12, alert.text = NULL, alert.bg = c("primary", "warning", "secondary", "info", "success", "danger"), toolbar = NULL, header = TRUE, draggable = TRUE, id = NULL) {
   add.collapsed.01 <- ifelse(collapsed, " panel-collapsed ", "")
   alert.bg <- match.arg(alert.bg)
+  header.bg <- match.arg(header.bg)[1]
+  header.bg.add <- switch (header.bg,
+                           "0" = "", "1" = "bg-primary-700 bg-success-gradient", "2" = "bg-primary-500 bg-info-gradient", "3" = "bg-primary-600 bg-primary-gradient", "4" = "bg-info-600 bg-primray-gradient", "5" = "bg-info-600 bg-info-gradient", "6" = "bg-info-700 bg-success-gradient", "7" = "bg-success-900 bg-info-gradient", "8" = "bg-success-700 bg-primary-gradient", "9" = "bg-success-600 bg-success-gradient", "10" = "bg-danger-900 bg-info-gradient", "11" = "bg-fusion-400 bg-fusion-gradient", "12" = "bg-faded"
+  )
   if (collapsed) {
     add.collapsed.01 <- " panel-collapsed"
     add.collapsed.02 <- " collapse"
@@ -115,12 +120,14 @@ card <- function(...,title = "Standard Card",  collapsed = FALSE, bg.fade = TRUE
   content.main <- div(
     id = paste0("box", num),
     class = paste0("panel",draggable.class, add.collapsed.01),
+    `data-panel-attstyle`= trimws(header.bg.add),
     role = "widget",
     #ifelse(!exists('.nGSAscripts'),cssjsinclude('core','3'),''),
     # header
     if (header) {
       div(
-        class = "panel-hdr", role = "heading",
+        class = paste0("panel-hdr",header.bg.add),
+        role = "heading",
         h2(class = "js-get-date ui-sortable-handle", tags$b(title)),
         div(
           class = "panel-saving mr-2", style = "display:none",
