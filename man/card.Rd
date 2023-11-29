@@ -10,7 +10,7 @@ card(
   collapsed = FALSE,
   bg.fade = TRUE,
   width = 12,
-  header.bg = 0:12,
+  header.bg = letters[1:13],
   alert.text = NULL,
   alert.bg = c("primary", "warning", "secondary", "info", "success", "danger"),
   toolbar = NULL,

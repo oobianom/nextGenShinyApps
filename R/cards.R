@@ -458,9 +458,34 @@ mainPanel <- function(..., width = 8, border=FALSE, shadow=FALSE){
 #' @export
 
 altPanel <- function(..., width = 4, border=FALSE, shadow=FALSE){
-  shiny::div(class = paste0("col-12 col-md-", width),
+  htmltools::div(class = paste0("col-12 col-md-", width),
       class = ifelse(border,"border",""),
       class = ifelse(shadow,"shadow",""),
-      shiny::tags$form(class = "well",
+      htmltools::tags$form(class = "well",
                 role = "complementary", ...))
+}
+
+
+#' Container to fit all containers horizontally
+#'
+#' Fit containers horizontally
+#'
+#' @param ... List of content
+#' @param border Should border be declared for the panel
+#' @param shadow Should a shadow be added to the panel
+#'
+#' @return Creates a a box to fit all boxes within
+#'
+#' @examples
+#' \donttest{
+#'  flexBox(shiny::div("Div 1"),shiny::div("Div 2"),shiny::div("Div 1"))
+#'  }
+#' @export
+flexBox <- function(..., border = FALSE, shadow = FALSE) {
+  htmltools::div(
+    class = "d-block d-md-flex",
+    if (border) class <- "border border-secondary",
+    if (shadow) class <- "shadow-md",
+    ...
+  )
 }
