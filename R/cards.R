@@ -483,7 +483,7 @@ altPanel <- function(..., width = 4, border=FALSE, shadow=FALSE){
 #' @export
 flexBox <- function(..., border = FALSE, shadow = FALSE) {
   htmltools::div(
-    class = "d-block d-md-flex",
+    class = "ngsflexBox d-block d-md-flex",
     if (border) class <- "border border-secondary",
     if (shadow) class <- "shadow-md",
     ...
