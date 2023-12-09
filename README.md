@@ -3,7 +3,7 @@
 # nextGenShinyApps: Craft Exceptional R Shiny Dashboards with Novel Responsive Tools <img src="https://coursewhiz.org/shinyappsampleso/hex-nextGenShinyApps.png" width="200" align="right" >
 ## Official website: https://nextgenshinyapps.obi.obianom.com
 
-### A sample finished Modal shiny app: https://r2apps.shinyapps.io/nextgenshinyapps-card/
+### A sample finished Modal shiny app: https://jimrb.shinyapps.io/modal-nGSA/
 
 ### A sample finished Cards shiny app: https://r2apps.shinyapps.io/nextgenshinyapps-card/
 
